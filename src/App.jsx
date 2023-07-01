@@ -11,11 +11,8 @@ function App() {
   function loginFunction(e)
   {
     e.preventDefault(); 
-    if (email != null)
-    {
       navigate('/success')
       console.log(`the users email is ${email}`)
-    }
   }
   return (
     <div className="body-container">

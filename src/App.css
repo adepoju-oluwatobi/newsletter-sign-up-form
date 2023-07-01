@@ -81,8 +81,85 @@ form button
     background-color: hsl(234, 29%, 20%);
     color: white;
 }
+form button:hover
+{
+    background: hsl(4, 100%, 67%);
+}
 
-@media (max-width: 768px)
+/** Succes page styles **/
+.main-container
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success-container
+{
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.success-icon img
+{
+    width: 40px;
+}
+.success-container .heading{
+    font-size: 38px;
+    line-height: 35px;
+}
+.success-container .description
+{
+    font-size: 12px;
+}
+.success-container button
+{
+    width: 100%;
+    margin: 12px 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+}
+.success-container button:hover
+{
+    background: hsl(4, 100%, 67%);
+}
+@media (max-width: 766px)
+{
+    .success-container 
+    {
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        height: 100vh;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+    .success-icon img 
+    {
+        margin-top: 30%;
+    }
+    .success-container .heading 
+    {
+        margin-top: -40%;
+    }
+    .success-container button 
+    {
+        align-items: flex-end;
+    }
+}
+
+/** -------------------- **/
+@media (max-width: 766px)
 {
     .container {
             background: white;

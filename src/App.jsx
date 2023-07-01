@@ -1,8 +1,23 @@
 import './App.css'
+import { useState } from 'react'
 import ListIcon from './assets/images/icon-list.svg'
 import FormImage from './assets/images/illustration-sign-up-desktop.svg'
+import { useNavigate } from 'react-router-dom'
+import VariableContext from '../VariableContext'
 
 function App() {
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+
+  function loginFunction(e)
+  {
+    e.preventDefault(); 
+    if (email != null)
+    {
+      navigate('/success')
+      console.log(`the users email is ${email}`)
+    }
+  }
   return (
     <div className="body-container">
       <div className='container'>
@@ -24,10 +39,11 @@ function App() {
               <p>And much more!</p>
             </div>
 
-              <form action="">
+              <form action="" onSubmit={loginFunction}>
                 <div className='input-container'>
                   <label htmlFor="email">Email Address</label>
-                <input type="email" name='email' placeholder='email@company.com' required/>
+                <input type="email" name='email' placeholder='email@company.com' 
+                onChange={(e)=> setEmail(e.target.value)} required/>
                 </div>
 
                 <div className='form-btn-container'>

@@ -7,7 +7,7 @@ function App() {
     <div className="body-container">
       <div className='container'>
         <div className='form-container'>
-          <p className='heading'>Stay update!</p>
+          <p className='heading'>Stay updated!</p>
           <p className='description'>Join 60,000+ product managers recieving monthly updates on:</p>
 
           <div className='icon-list-container'>

@@ -82,12 +82,12 @@ form button
     color: white;
 }
 
-@media (max-width: 320px)
+@media (max-width: 375px)
 {
     .container {
             background: white;
             height: fit-content;
-            width: 320px;
+            width: fit-content;
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
@@ -98,21 +98,6 @@ form button
                 }
 }
 
-@media (max-width: 375px) {
-    .container {
-        background: white;
-        height: fit-content;
-        width: 320px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    .form-image-container img {
-        height: 100%;
-        width: 100%;
-    }
-}
 
 @media (min-width: 768px)
 {

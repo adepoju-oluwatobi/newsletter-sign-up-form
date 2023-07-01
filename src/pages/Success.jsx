@@ -1,7 +1,6 @@
 import React from 'react'
 import SuccessImg from '../assets/images/icon-success.svg';
 import { Link } from 'react-router-dom';
-import App from '../App';
 
 function Success(props) {
   return (
@@ -14,7 +13,7 @@ function Success(props) {
           <div className="caption">
             <p className='heading'>Thanks for subscribing!</p>
             <p className='description'>
-              A confirmation email has been sent to {props.userEmail}. please open
+              A confirmation email has been sent to your email. please open
                it and click the button inside to confirm your subscription.
             </p>
           </div>

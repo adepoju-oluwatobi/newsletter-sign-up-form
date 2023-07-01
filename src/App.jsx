@@ -3,7 +3,6 @@ import { useState } from 'react'
 import ListIcon from './assets/images/icon-list.svg'
 import FormImage from './assets/images/illustration-sign-up-desktop.svg'
 import { useNavigate } from 'react-router-dom'
-import VariableContext from '../VariableContext'
 
 function App() {
   const [email, setEmail] = useState("");

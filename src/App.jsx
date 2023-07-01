@@ -8,7 +8,7 @@ function App() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
-  function loginFunction(e)
+  async function loginFunction(e)
   {
     e.preventDefault(); 
       navigate('/success')
@@ -43,7 +43,9 @@ function App() {
                 </div>
 
                 <div className='form-btn-container'>
-                  <button>subscribe to monthly news letter</button>
+                  <button>
+                    subscribe to monthly news letter
+                    </button>
                 </div>
             </form>
 

@@ -38,7 +38,7 @@ function App() {
               <form action="" onSubmit={loginFunction}>
                 <div className='input-container'>
                   <label htmlFor="email">Email Address</label>
-                <input type="email" name='email' placeholder='email@company.com' 
+                <input type="email" name='email' value={email} placeholder='email@company.com' 
                 onChange={(e)=> setEmail(e.target.value)} required/>
                 </div>
 

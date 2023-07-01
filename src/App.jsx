@@ -4,16 +4,18 @@ import ListIcon from './assets/images/icon-list.svg'
 import FormImage from './assets/images/illustration-sign-up-desktop.svg'
 import { useNavigate } from 'react-router-dom'
 
-function App() {
+function App(props) {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
-  async function loginFunction(e)
+  function loginFunction(e)
   {
     e.preventDefault(); 
       navigate('/success')
       console.log(`the users email is ${email}`)
   }
+
+  
   return (
     <div className="body-container">
       <div className='container'>

@@ -3,6 +3,10 @@
     padding: 0;
     margin: 0;
 }
+.hide
+{
+    display: none;
+}
 .body-container
 {
     display: flex;
@@ -138,7 +142,8 @@ form button:hover
         background: white;
         border-radius: 20px;
         padding: 20px;
-        height: 100vh;
+        height: 100%;
+        overflow: hidden;
         width: fit-content;
         display: flex;
         flex-direction: column;

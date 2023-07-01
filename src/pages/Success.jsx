@@ -2,7 +2,7 @@ import React from 'react'
 import SuccessImg from '../assets/images/icon-success.svg';
 import { Link } from 'react-router-dom';
 
-function Success(props) {
+function Success() {
   return (
     <div className='main-container'>
       <div className="success-container">
@@ -13,7 +13,7 @@ function Success(props) {
           <div className="caption">
             <p className='heading'>Thanks for subscribing!</p>
             <p className='description'>
-              A confirmation email has been sent to your email. please open
+              A confirmation email has been sent to {}. please open
                it and click the button inside to confirm your subscription.
             </p>
           </div>
